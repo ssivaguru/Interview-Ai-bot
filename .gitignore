@@ -6,3 +6,27 @@
 *.bib
 
 Emotion analysis/fer2013/README
+
+output\.avi
+
+tmp\.wav
+
+faces/
+
+Images/
+
+Emotion_analysis
+
+Interview-Ai-bot/Emotion analysis/Emotion_analysis
+
+*.jpg
+
+*.png
+
+*.pts
+
+FacialKeyPoints-model2
+
+Facial Keypoints/FacialKeyPoints-model1
+
+ENG_M\.wav
