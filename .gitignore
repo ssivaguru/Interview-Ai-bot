@@ -30,3 +30,5 @@ FacialKeyPoints-model2
 Facial Keypoints/FacialKeyPoints-model1
 
 ENG_M\.wav
+
+haarcascade_frontalface_default\.xml
