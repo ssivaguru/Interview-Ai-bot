@@ -34,3 +34,5 @@ ENG_M\.wav
 haarcascade_frontalface_default\.xml
 
 Facial Keypoints\(30 keypoints\)/FacialKeyPoints-model1
+
+Emotion analysis/aws_pair\.pem
