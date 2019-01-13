@@ -40,3 +40,9 @@ Emotion analysis/aws_pair\.pem
 Facial Keypoints\(30 keypoints\)/\.ipynb_checkpoints/FacialKeyPoints-checkpoint\.ipynb
 
 *.com
+
+eye-gaze/MPIIGaze/
+
+eye-gaze/
+
+*.pem
