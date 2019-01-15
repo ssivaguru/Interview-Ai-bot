@@ -1,17 +1,22 @@
 import cv2
 import shutil
 import os
+import numpy as np
 
 FACEDIR = "Face"
+
+emotionDict = {0: 'Angry', 1: 'Disgust', 2: 'Fear', 3: 'Happy', 4: 'Sad', 5: 'Surprise', 2: 'Neutral'}
+
+
 class FaceCropper(object):
     CASCADE_PATH = "haarcascade_frontalface_default.xml"
 
     def __init__(self):
         self.face_cascade = cv2.CascadeClassifier(self.CASCADE_PATH)
-        if os.path.isdir(FACEDIR):
-            shutil.rmtree(FACEDIR)
+        #if os.path.isdir(FACEDIR):
+       #     shutil.rmtree(FACEDIR)
         
-        os.mkdir(FACEDIR,0755)
+       # os.mkdir(FACEDIR,644)
         
     def generate(self, image_path,i):
         img = cv2.imread(image_path)
@@ -44,3 +49,8 @@ class FaceCropper(object):
             i += 1
             cv2.imwrite("/home/local/ZOHOCORP/siva-5548/Documents/Artificial intelligence/Interview Ai/Interview-Ai-bot/src/Face/image%d.jpg" % i, lastimg)
         return i
+
+def getEmotion(data):
+    index = np.argmax(data)
+    emotion = emotionDict.get(index)
+    return emotion
