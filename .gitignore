@@ -46,3 +46,15 @@ eye-gaze/MPIIGaze/
 eye-gaze/
 
 *.pem
+
+audio\.wav
+
+*.avi
+
+*.pyc
+
+*.json
+
+*.jpeg
+
+*.xml
