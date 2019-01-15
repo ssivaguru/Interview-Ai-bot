@@ -24,10 +24,10 @@ class recorder:
         self.process = None
         self.audoFilename = "audio.wav"
         self.videoFilename = 'video.avi'
-        if os.path.isdir(IMAGE_DIR):
-            shutil.rmtree(IMAGE_DIR)
+       # if os.path.isdir(IMAGE_DIR):
+       #     shutil.rmtree(IMAGE_DIR)
         
-        os.mkdir(IMAGE_DIR,0755)
+        #os.mkdir(IMAGE_DIR, 644)
 
     def record(self):
 
