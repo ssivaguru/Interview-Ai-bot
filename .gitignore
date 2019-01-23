@@ -58,3 +58,7 @@ audio\.wav
 *.jpeg
 
 *.xml
+
+src/prediction\.dat
+
+*.dat
