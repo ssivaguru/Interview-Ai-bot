@@ -5,10 +5,11 @@ import os
 from keras.models import load_model
 import cv2
 import numpy as np
+from vad import VoiceActivityDetector
 
 IMAGE_DIR = "Images"
 
-#record = re.recorder()
+record = re.recorder()
 
 ###remove file if already present
 record.fileCheck()
@@ -45,3 +46,8 @@ f.close()
 x=open('prediction.dat','ab')
 np.savetxt(x,predit,fmt='%s')
 x.close()
+
+v = VoiceActivityDetector("audio.wav")
+raw_detection = v.detect_speech()
+speech_labels = v.convert_windows_to_readible_labels(raw_detection)    
+save_to_file(speech_labels, "vad.json")
